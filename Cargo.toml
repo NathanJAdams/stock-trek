@@ -1,13 +1,13 @@
 [package]
-name = "stock-trek"
+name = "stock_trek"
 version = "0.1.0"
-description = "stock-trek time-series analysis rust bindings"
+description = "Stock Trek time-series analysis rust bindings"
 authors = ["stock-trek.com <stock-trek@proton.me>"]
 readme = "README.md"
 edition = "2021"
 
 [lib]
-name = "stock-trek"
+name = "stock_trek"
 crate-type = ["cdylib"]
 
 [dependencies]
