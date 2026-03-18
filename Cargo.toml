@@ -3,12 +3,16 @@ name = "stock_trek"
 version = "0.1.0"
 description = "Stock Trek time-series analysis rust bindings"
 authors = ["stock-trek.com <stock-trek@proton.me>"]
+license = "MIT"
 readme = "README.md"
 edition = "2021"
 
 [lib]
 name = "stock_trek"
-crate-type = ["cdylib"]
+crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-pyo3 = { version = "0.20", features = ["extension-module"] }
+pyo3 = { version = "0.28.2", optional = true, features = ["extension-module"] }
+
+[features]
+python = ["dep:pyo3"]

@@ -1,5 +1,5 @@
 [build-system]
-requires = ["maturin>=1.0,<2"]
+requires = ["maturin>=1,<2"]
 build-backend = "maturin"
 
 [project]
@@ -8,3 +8,8 @@ description = "Stock Trek time-series analysis python bindings"
 authors = [{ name = "stock-trek.com", email = "stock-trek@proton.me" }]
 readme = "README.md"
 requires-python = ">=3.8"
+
+[tool.maturin]
+module-name = "stock_trek"
+features = ["python"]
+python-source = "python"
